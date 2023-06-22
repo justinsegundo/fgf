@@ -62,7 +62,7 @@ ROOT_URLCONF = 'fgf.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'astronaut/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'astronaut/Templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
