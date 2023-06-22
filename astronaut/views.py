@@ -5,7 +5,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.decorators import login_required
+from django.contrib.auh.decorators import login_required
 
 
 
@@ -76,7 +76,7 @@ def signin(request):
 
     return render(request, "astronaut/signin.html")
 
-@login_required(login_url="signin")
+@login_required(login_url="/signin/")
 
 def signout(request):
     logout(request)
