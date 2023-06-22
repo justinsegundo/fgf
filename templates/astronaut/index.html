@@ -1,0 +1,655 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to Cebu</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+    
+</head>
+<body>
+
+    <header>
+
+        <div id="menu-bar"  class="fa fa-bars"   ></div>
+
+
+        <h3>Cebu Guide</h3>
+        
+    
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Pakages</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">VIP</a>     
+            <a href="#contact">Contact Us</a>        
+            <a href="/signout">Log Out</a>
+    
+        </nav>
+       
+       <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+
+       </div>
+    
+        <form action="" class="search-bar-container">
+           
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Its more fun in Cebu Philipines</h3>
+            <p>Discover Sugbo, adventures awaits</p>
+            <button href="#" class="btn">Discover more ></button>
+        </div>
+
+        <div class="controls">
+
+            <span class="vid-btn active" data-src="/static/media/My Video1.mp4"></span>
+            <span class="vid-btn" data-src="/static/media/My Video1.mp4"></span>
+            <span class="vid-btn" data-src="/static/media/My Video1.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="/static/media/My Video1.mp4" id="video-slider" loop autoplay muted></video>
+
+        </div>
+
+
+    </section>
+
+<!-- home section ends-->
+
+<!-- book section starts -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="/static/media/cebu2.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Destination</h3>
+                <input type="text" placeholder="Name of Place">
+            </div>
+            <div class="inputBox">
+                <h3>How many</h3>
+                <input type="number" placeholder="Number of Guests">
+            </div>
+            <div class="inputBox">
+                <h3>Arrival Date</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>Date Leave</h3>
+                <input type="date">
+            </div>
+            <button type="submit" class="btn" value="book now">Book Now</button>
+        </form>
+    </div>
+
+</section>
+
+<!-- book section ends-->
+
+<!-- Packages section starts-->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+        <img src="/static/media/Temple.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Temple of Leah</i></h3>
+            <p>Temple of Leah is one of the top cultural and historical sites worth adding to your itinerary in Cebu City. Many call the temple the “Taj Mahal” of Cebu ...</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php750.00<span>Php950.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+
+     <div class="box">
+        <img src="/static/media/alejandra.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Buwakan ni Alejandra</i></h3>
+            <p>Buwakan ni Alejandra is a beautiful garden about 33 kilometers from the city. Many people come from far away to see it. The name comes from the Visayan word “buwakan,” which means flower garden, and from the mother of the owners, Alejandra.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php300.00<span>Php400.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+     <div class="box">
+        <img src="/static/media/ocean.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Cebu Ocean park</i></h3>
+            <p>Cebu Ocean Park is Cebu's first and only marine-themed park, with a diverse array of sea creatures! This massive aquarium is home to hundreds of marine creatures of various species. Cebu Ocean Park is the Philippines' largest oceanarium.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php800.00<span>Php950.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+
+     <div class="box">
+        <img src="/static/media/Oslob.jfif" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Oslob Whale Shark watching</i></h3>
+            <p>Whale shark watching activity in Oslob is undeniably a popular and unique attraction worldwide and yet also controversial. This incredible experience prompts ...</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php600.00<span>Php750.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+
+     <div class="box">
+        <img src="/static/media/Island.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Virgin Island</i></h3>
+            <p>Little island popular for beach swimming, snorkeling & cliff diving, plus cottages & other lodging.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php750.00<span>Php950.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+
+     <div class="box">
+        <img src="/static/media/safari.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Cebu Safari & Adventure Park</i></h3>
+            <p>The Cebu Safari & Adventure Park is the premier Safari park in the country located in Northern Cebu. It serves as a sanctuary for hundreds of different species of plants and animals. A brainchild of hippophile and orchid collector, Senyorito Michel Lhuillier, together with his business partner, Mr. Eduard J. Loop, this over 170-hectare property features more than a thousand animals from 120 different species.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php800.00<span>Php1000.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+
+     <div class="box">
+        <img src="/static/media/peak.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Osmeña Peak</i></h3>
+            <p>Osmeña Peak is the highest point in the entire island.  Lime stones that have sharp protruding peaks which are perfect for taking pictures make up these hills. </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php300.00<span>Php400.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+
+     <div class="box">
+        <img src="/static/media/kawasan.webp" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Kawasan Falls</i></h3>
+            <p>Kawasan Falls is a three-stage cascade of clear turquoise water from mountain springs of Mantalongon mountain range.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php400.00<span>Php500.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+     
+     <div class="box">
+        <img src="/static/media/taoist.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt">Cebu Taoist Temple</i></h3>
+            <p>This temple had become popular because of its artistic structures. Even non-believers of the Taoism religion pay visit to the place.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price"> Php400.00<span>Php500.00</span></div>
+            <a href="#" class="btn">Book now</a>
+
+         </div>
+     </div>
+
+    </div>
+
+</section>
+
+
+<!-- Packages section ends-->
+
+<!-- Services section starts -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable hotels</h3>
+            <p>We are delighted to have you as our guest and are committed to providing you with a comfortable and memorable stay. </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>We serve healthy & delicius foods</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safety Guide</h3>
+            <p>Safety and security are vital to providing quality in tourism. More than any other economic activity, the success or failure of a tourism destination depends on being able to provide a safe and secure environment for visitors</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe"></i>
+            <h3>Around the world</h3>
+            <p>The journey of a thousand miles begins with a single step</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Fast and comfortable travel</h3>
+            <p>Wishing you a safe and joyful journey ahead.</p>
+        </div>
+        <div class="box">
+           <i class="fas fa-child"></i>
+            <h3>Adventure</h3>
+            <p>Enjoy and be safe all the time</p>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+
+
+<!-- Services section ends -->
+
+<!-- Gallery section starts -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>Y</span>
+
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="/static/media/magellan.jpg" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Magellan"s Cross</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/media/basilica.jpg" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Basilica del Santo Niño</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/media/fort.jpg" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Fort San Pedro</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/static/media/museo.jpg" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Museo Sugbo</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/static/media/camotes.jpg" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Camotes Island</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/media/bantayan.jpg" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Bantayan Island</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/media/anjo.jpg" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Anjo World</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/media/Olango.jpg" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Olango Island</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/media/Mtkapayas.webp" alt="">
+            <div class="content">
+                <h3>Amazing Places</h3>
+                <p>Mt Kapayas</p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+
+
+
+
+        
+
+    </div>
+
+</section>
+
+
+
+<!-- Gallery section ends -->
+
+<!-- Review section starts -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        
+      
+        <span>V</span>
+        <span>I</span>
+        <span>P</span>
+ 
+   
+
+    </h1>
+    <div class="box-container">
+
+                <div class="box">
+                    <img src="/static/media/Jera.jpg" alt="">
+                    <h3>Jerashele H. Molde</h3>
+                    <p>San Jose, Catmon, Cebu</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="/static/media/Rhea.jpeg" alt="">
+                    <h3>Rhea Mae Perez</h3>
+                    <p>Liki, Sogod, Cebu</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="/static/media/Mary.jpg" alt="">
+                    <h3>Mary Claire Comendador</h3>
+                    <p>Tabunok, Sogod, Cebu</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="/static/media/Klyde.jpeg" alt="">
+                    <h3>Klyde Antolin</h3>
+                    <p>Poblacion, Sogod, Cebu</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Review section ends -->
+
+<!-- Contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="/static/media/heart.jpg_large" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+
+
+</section>
+
+
+
+<!-- Contact section ends -->
+
+<!-- footer section starts-->
+
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About us</h3>
+            <p>
+                Founded in 2016 (part of Emerging Travel Group, est 2010) and created for travel market professionals, Cebu Guide has become one of the fastest-growing platforms for B2B industry players. An innovative and reliable partner for tens of thousands of travel agents, tour operators, and corporate clients.
+                We offer over 2 million accommodation options, FIT & group reservations, car rental, transfers, and other travel-related services for both leisure and business travel.</p>
+        </div>
+        <div class="box">
+            <h3>Branch Locations</h3>
+            <a href="#">Carmen</a>
+            <a href="#">Bogo City</a>
+            <a href="#">Camotes</a>
+            <a href="#">Liloan</a>
+        </div>
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#">home</a>
+            <a href="#">Book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Tiktok</a>
+        </div>
+    </div>
+    <h1 class="credit">created by<span>VIP GIRLS</span>| All rights reserved! </h1>
+</section>
+
+
+<!-- footer section ends-->
+
+
+
+ <!-- {% if user.is_authenticated %}
+   <h3>Hello {{ firstname }}</h3>
+
+    <button type="submit"><a href="/signout">Signout</a></button>
+    {% else %}
+    <button type="submit"><a href="/signin">Signin</a></button>
+    <button type="submit"><a href="/signup">Signup</a></button>
+    {% endif %}
+   -->
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/styleweb.js' %}"></script>
+
+
+    
+</body>
+</html>

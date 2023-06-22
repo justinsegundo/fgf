@@ -1,0 +1,1 @@
+web: gunicorn fgj.wsgi:application --log-file -

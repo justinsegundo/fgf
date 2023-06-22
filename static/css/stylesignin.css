@@ -1,0 +1,468 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../media/South.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    height: 640px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    overflow: hidden;
+    transform: scale(1);
+    transition: height .2s ease;
+}
+
+.alert{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert p{
+    margin:2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 25rem;
+    height: 10rem;
+    align-items: center;
+    text-align: center;
+    
+    
+
+}
+
+#btn {
+    left: 30%;
+    margin-top: 10%;
+    height: 35px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    color: antiquewhite;
+    font-weight: 500;
+    width: 50px;
+
+
+
+}
+
+
+form.sign-up-form{
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.inner-box {
+    position: absolute;
+    width: calc(100% - 4.1rem);
+    height: calc(100% - 4.1rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forms-wrap {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    top: 0;
+    left: 0;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    transition: 0.8s ease-in-out;
+    
+}
+
+
+form{
+    margin-left: 30px;
+    margin-right: 25px;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: opacity 0.02s 0.4s;
+}
+
+
+.wrapper.active-popup{
+    transform: scale(0);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+    height: 100%;
+}
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+    
+}
+
+
+.wrapper .error{
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 6px;
+    width: 95%;
+    border-radius: 5px;
+}
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+/*
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+}
+*/
+.sign-in-form h1{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sign-in-form h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: left;
+}
+
+.sign-up-form h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: left;
+}
+
+
+.input-box {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+    background: #fff;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+}
+.remember-forgot{
+    font-size: .9em;
+    color: #fff;
+    font-weight: 500;
+    margin: -13px 0 13px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn {
+    width: 90%;
+    height: 45px;
+    background: hsl(197, 82%, 24%);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: antiquewhite;
+    font-weight: 500;
+}
+.login-register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 15px 0 10px;
+    width: 90%;
+}
+.login-register p a {
+    color:  hsl(197, 82%, 24%);
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+main.sign-up-mode form.sign-in-form{
+    opacity: 0;
+    pointer-events: none;
+}
+
+main.sign-up-mode form.sign-up-form{
+    opacity: 1;
+    pointer-events: all;
+}
+
+main.sign-up-mode .forms-wrap{
+    left: 55%;
+}
+
+main.sign-up-mode .carousel{
+    left: 0%;
+}
+
+.carousel {
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    left: 45%;
+    top: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    grid-template-rows: auto 3fr;
+    padding-bottom: 1rem;
+    transition: 0.8s ease-in-out;
+}
+
+.image-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 85%;
+}
+
+.image {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 96%;
+    height: 80%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.5s;
+}
+
+.img-1 {
+    transform: translate(0, -50px);
+}
+
+.img-2 {
+    transform: scale(0.4, 0.5);
+}
+
+.img-3 {
+    transform: scale(0.3) rotate(-20deg);
+}
+.image.show{
+    opacity: 1;
+    transform: none;
+}
+
+
+
+.bullets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    
+}
+
+.bullets span{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fff;
+    margin: 0 1.25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.bullets span.active{
+    width: 1.1rem;
+    background-color:  hsl(197, 82%, 24%);
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:850px){
+    .wrapper{
+        height: auto;
+        max-width: 550px;
+        overflow: hidden;
+    }
+
+    .inner-box{
+        position: static;
+        transform: none;
+        width: revert;
+        height: revert;
+        padding: 2rem;
+    }
+
+    .forms-wrap{
+        position:revert;
+        width: 100%;
+        height: auto;
+    }
+
+    form{
+        max-width: revert;
+        padding: 1.5rem 2.5rem 2rem;
+        transition: transform 0.8s ease-in-out, opacity 0.45s linear;
+    }
+
+    .heading{
+        margin: 2rem 0;
+    }
+
+    form.sign-up-form{
+        transform: translateX(0);
+    }
+
+    main.sign-up-form form.sign-in-form{
+        transform: translateX(-100%);
+    }
+
+    main.sign-up-form form.sign-in-form{
+        transform: translateX(-100%);
+    }
+
+    .carousel{
+        position: revert;
+        height: auto;
+        width: 100%;
+        padding: 3rem 2rem;
+        display: flex;
+    }
+
+    .image-wrapper{
+        display: none;
+    }
+
+}
+
+@media (max-width: 530px){
+    main {
+        padding: 1rem;
+    }
+    .wrapper{
+        border-radius: 2rem;
+    }
+
+    .inner-box{
+        padding: 1rem;
+    }
+
+    .carousel{
+        padding: 1.5rem 1rem;
+        border-radius: 1.6rem;
+    }
+}
