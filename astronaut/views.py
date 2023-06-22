@@ -76,7 +76,7 @@ def signin(request):
 
     return render(request, "astronaut/signin.html")
 
-@login_required(login_url="/signin/")
+@login_required(login_url="signin")
 
 def signout(request):
     logout(request)
